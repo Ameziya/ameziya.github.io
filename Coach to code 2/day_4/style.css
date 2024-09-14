@@ -1,0 +1,50 @@
+body {
+    margin: 0;
+}
+
+header {
+    padding: 6px;
+    background-color: orange;
+    color: white;
+    text-align: center;
+    grid-area: header;
+}
+
+#menu {
+    padding: 32px;
+    background-color: darkgoldenrod;
+    grid-area: menu;
+}
+
+nav {
+    margin: 0.9%;
+    display: flex;
+    align-items: center;
+    flex-flow: column;
+}
+
+#main-content {
+    padding:32px;
+    grid-area:main;
+}
+
+footer{
+    padding:16px;
+    background-color: orange;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    grid-area: footer;
+}
+
+#grid-container {
+    display: grid;
+    grid-template-areas: "header header"
+    "menu main"
+    "footer footer"
+    ;
+    grid-template-columns: 0.9fr 10fr;
+}
+    
+
+
